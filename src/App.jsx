@@ -1,17 +1,7 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // <-- HashRouter
-import Form from './components/Form.jsx';
-import Result from './components/Result.jsx';
-
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Form />} />
-        <Route path="/result" element={<Result />} />
-      </Routes>
-    </Router>
+    <div style={{ background: 'white', color: 'black', height: '100vh' }}>
+      <h1>Snaphoa Account Creation</h1>
+    </div>
   );
 }
-
-export default App;
