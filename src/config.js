@@ -1,2 +1,4 @@
 // src/config.js
-export const API_URL = "http://localhost:5020/api"; // use Render URL in production
+// src/config.js
+export const API_URL = "https://snaphoa-account-creation-backend.onrender.com/api";
+

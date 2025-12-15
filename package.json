@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jokimon.github.io/snaphoa-account-creation",
+  "homepage": "https://jokimon.github.io/snaphoa-account-creation-frontend",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
