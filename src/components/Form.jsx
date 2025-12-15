@@ -19,9 +19,13 @@ const Form = () => {
       const data = await response.json();
 
       if (data.status === 'success') {
-        // Navigate to result page with server response
-        navigate('/result', { state: { firstName: data.firstName, lastName: data.lastName } });
-      }
+        // Store the server response in sessionStorage
+        sessionStorage.setItem('userData', JSON.stringify({ firstName: data.firstName, lastName: data.lastName }));
+  
+        // Navigate to result page
+        navigate('/result');
+    }
+
     } catch (err) {
       console.error('Error submitting form:', err);
     }

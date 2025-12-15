@@ -2,9 +2,9 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Result = () => {
-  const location = useLocation();
+  const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
+  const { firstName, lastName } = userData;
   const navigate = useNavigate();
-  const { firstName, lastName } = location.state || {};
 
   const handleGoBack = () => {
     navigate('/'); // navigate back to the form page
