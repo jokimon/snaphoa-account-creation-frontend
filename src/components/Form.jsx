@@ -10,7 +10,7 @@ const Form = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5020/api/submit', {
+      const response = await fetch('https://snaphoa-backend.onrender.com/api/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ firstName, lastName }),
