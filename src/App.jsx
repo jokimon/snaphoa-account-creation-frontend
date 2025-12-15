@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // <-- HashRouter
 import Form from './components/Form.jsx';
 import Result from './components/Result.jsx';
 
