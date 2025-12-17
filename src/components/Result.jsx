@@ -15,9 +15,11 @@ const Result = () => {
       {firstName && lastName ? (
         <>
           <h2>
-            First Name: {firstName}
+            User has submitted the following information:
             <br />
-            Last Name: {lastName}
+            <p>First Name: </p> {firstName}
+            <br />
+            <p>Last Name: </p> {lastName}
           </h2>
           <button onClick={handleGoBack} style={{ marginTop: '20px' }}>
             Go Back
